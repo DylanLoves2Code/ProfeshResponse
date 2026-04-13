@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Professional Responsibility — Combined Outline</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: Georgia, 'Times New Roman', serif; font-size: 13px; line-height: 1.6; color: #111; background: #fff; padding: 40px 60px; max-width: 960px; margin: 0 auto; }
+  h1 { font-size: 20px; font-weight: bold; text-align: center; margin-bottom: 4px; letter-spacing: 0.5px; }
+  .subtitle { text-align: center; font-size: 12px; color: #555; margin-bottom: 30px; font-style: italic; }
+  h2 { font-size: 14px; font-weight: bold; background: #1a1a2e; color: #fff; padding: 6px 10px; margin: 28px 0 10px; letter-spacing: 0.3px; }
+  h3 { font-size: 13px; font-weight: bold; border-bottom: 1.5px solid #333; padding-bottom: 3px; margin: 16px 0 6px; }
+  h4 { font-size: 13px; font-weight: bold; margin: 10px 0 4px; color: #1a1a2e; }
+  p { margin-bottom: 6px; }
+  ul, ol { margin: 4px 0 8px 22px; }
+  li { margin-bottom: 3px; }
+  .rule-tag { display: inline-block; font-size: 10px; font-weight: bold; background: #1a1a2e; color: #fff; padding: 1px 6px; border-radius: 3px; margin-right: 6px; vertical-align: middle; }
+  .ca { display: inline-block; font-size: 10px; font-weight: bold; background: #8B0000; color: #fff; padding: 1px 6px; border-radius: 3px; margin-right: 6px; vertical-align: middle; }
+  .ca-block { border-left: 3px solid #8B0000; padding-left: 10px; margin: 8px 0; background: #fff8f8; }
+  .ca-block-title { font-size: 11px; font-weight: bold; color: #8B0000; margin-bottom: 3px; }
+  .must { color: #8B0000; font-weight: bold; }
+  .may { color: #005a00; font-weight: bold; }
+  .cannot { color: #8B0000; font-weight: bold; }
+  .key { background: #fffbcc; padding: 1px 4px; border-radius: 2px; }
+  table { width: 100%; border-collapse: collapse; margin: 10px 0; font-size: 12px; }
+  th { background: #1a1a2e; color: #fff; padding: 5px 8px; text-align: left; font-weight: bold; }
+  td { padding: 4px 8px; border: 0.5px solid #ccc; vertical-align: top; }
+  tr:nth-child(even) td { background: #f7f7f7; }
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 10px 0; }
+  .box { border: 1px solid #ccc; padding: 10px 12px; border-radius: 4px; }
+  .box-must { border-color: #8B0000; background: #fff8f8; }
+  .box-may { border-color: #005a00; background: #f8fff8; }
+  .box-title { font-size: 11px; font-weight: bold; margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.5px; }
+  .box-must .box-title { color: #8B0000; }
+  .box-may .box-title { color: #005a00; }
+  .toc { margin: 0 0 30px; padding: 14px 18px; border: 1px solid #ccc; background: #fafafa; }
+  .toc-title { font-weight: bold; font-size: 13px; margin-bottom: 8px; }
+  .toc-list { list-style: none; margin: 0; columns: 2; }
+  .toc-list li { margin-bottom: 3px; }
+  .toc-list a { color: #1a1a2e; text-decoration: none; font-size: 12px; }
+  .toc-list a:hover { text-decoration: underline; }
+  .step { display: flex; align-items: flex-start; gap: 8px; margin: 4px 0; }
+  .step-num { min-width: 20px; height: 20px; background: #1a1a2e; color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 10px; font-weight: bold; flex-shrink: 0; margin-top: 1px; }
+  hr { border: none; border-top: 0.5px solid #ccc; margin: 6px 0; }
+  @media print {
+    body { padding: 20px 30px; }
+    h2 { page-break-before: auto; }
+    .two-col { grid-template-columns: 1fr 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<h1>PROFESSIONAL RESPONSIBILITY — COMBINED OUTLINE</h1>
+<div class="subtitle">ABA Model Rules (Primary) | California Distinctions Marked in Red</div>
+
+<div class="toc">
+  <div class="toc-title">Contents</div>
+  <ul class="toc-list">
+    <li><a href="#bar">1. Bar Admission &amp; Misconduct</a></li>
+    <li><a href="#supervision">2. Supervisory &amp; Subordinate Responsibility</a></li>
+    <li><a href="#formation">3. Formation of A-C Relationship</a></li>
+    <li><a href="#competence">4. Competence, Diligence &amp; Communication</a></li>
+    <li><a href="#scope">5. Scope &amp; Allocation of Authority</a></li>
+    <li><a href="#termination">6. Termination</a></li>
+    <li><a href="#confidentiality">7. Confidentiality</a></li>
+    <li><a href="#acp">8. A-C Privilege &amp; Work Product</a></li>
+    <li><a href="#current-conflicts">9. Current Client Conflicts (MR 1.7)</a></li>
+    <li><a href="#former-conflicts">10. Former Client Conflicts (MR 1.9)</a></li>
+    <li><a href="#imputation">11. Imputation &amp; Screening (MR 1.10)</a></li>
+    <li><a href="#prospective">12. Prospective Clients (MR 1.18)</a></li>
+    <li><a href="#org">13. Organizational Clients (MR 1.13)</a></li>
+    <li><a href="#gov">14. Government Lawyers &amp; Judges</a></li>
+    <li><a href="#personal">15. Conflicts: Personal/Business Interests (MR 1.8)</a></li>
+    <li><a href="#fees">16. Fees &amp; Trust Accounts (MR 1.5 &amp; 1.15)</a></li>
+    <li><a href="#courts">17. Duties to Courts</a></li>
+    <li><a href="#third">18. Duties to Adversaries &amp; Third Persons</a></li>
+    <li><a href="#advertising">19. Advertising &amp; Solicitation</a></li>
+    <li><a href="#probono">20. Pro Bono &amp; Appointments</a></li>
+  </ul>
+</div>
+
+<!-- ============================= SECTION 1 ============================= -->
+<h2 id="bar">1. BAR ADMISSION &amp; MISCONDUCT</h2>
+
+<h3><span class="rule-tag">MR 8.1</span> Bar Admission &amp; Disciplinary Matters</h3>
+<p>Lawyers and applicants <span class="cannot">SHALL NOT</span>:</p>
+<ul>
+  <li>Knowingly make a <strong>false statement of material fact</strong> in a bar application or disciplinary proceeding</li>
+  <li>Fail to disclose a fact necessary to correct a known misapprehension, or fail to respond to a lawful demand from admissions/disciplinary authority</li>
+</ul>
+<p><em>Exception:</em> Client confidences protected under MR 1.6 are still shielded.</p>
+<p><em>Knowledge standard (MR 1.0(f)):</em> Actual knowledge; may be inferred from circumstances. More than mere suspicion — would a reasonable lawyer believe the conduct more likely than not occurred?</p>
+
+<h3><span class="rule-tag">MR 8.4</span> Misconduct</h3>
+<p>Professional misconduct includes:</p>
+<ul>
+  <li><strong>(a)</strong> Violate or <em>attempt</em> to violate the Rules; knowingly assist/induce another to do so, or act through another person</li>
+  <li><strong>(b)</strong> Criminal acts reflecting adversely on honesty, trustworthiness, or fitness (moral turpitude — lying/dishonesty)</li>
+  <li><strong>(c)</strong> Conduct involving dishonesty, fraud, deceit, or misrepresentation</li>
+  <li><strong>(d)</strong> Conduct prejudicial to the administration of justice</li>
+  <li><strong>(e)</strong> Claim ability to improperly influence a government official or achieve results by illegal means</li>
+  <li><strong>(f)</strong> Knowingly assist a judge in violating judicial conduct rules or law</li>
+  <li><strong>(g)</strong> Harassment or discrimination based on protected characteristics (race, sex, religion, national origin, ethnicity, disability, age, sexual orientation, gender identity, marital status, socioeconomic status) in the practice of law</li>
+</ul>
+<p><em>Note:</em> Violation of Rules is NOT necessarily a successful legal malpractice claim. "Conduct related to practice of law" covers representing clients, interacting with witnesses/coworkers, managing a firm, and participating in bar/business/social activities in connection with practice.</p>
+
+<div class="ca-block">
+  <div class="ca-title" style="font-size:11px;font-weight:bold;color:#8B0000;margin-bottom:3px;"><span class="ca">CA</span> CRPC 8.4</div>
+  <p>Substantially same as MR 8.4. Adds: must notify CA bar when engaging in conduct constituting harassment/discrimination based on protected characteristics.</p>
+</div>
+
+<h3><span class="rule-tag">MR 8.3</span> Reporting Misconduct (Snitch Rule)</h3>
+<ul>
+  <li>A lawyer who <strong>knows</strong> another lawyer has committed a violation raising a <strong>substantial question</strong> as to that lawyer's honesty, trustworthiness, or fitness <span class="must">SHALL report it</span> to the appropriate professional authority</li>
+  <li>Same obligation when a judge commits a violation raising a substantial question as to fitness</li>
+  <li><strong>Limits:</strong> Does NOT require disclosure of info protected by MR 1.6, or info gained from an approved lawyers' assistance program</li>
+  <li>"Substantial" refers to the <em>seriousness</em> of the offense, not the quantum of evidence</li>
+</ul>
+<div class="ca-block">
+  <div class="ca-title" style="font-size:11px;font-weight:bold;color:#8B0000;margin-bottom:3px;"><span class="ca">CA</span> Distinction</div>
+  <p><strong>No snitch rule in California.</strong> No mandatory reporting obligation under the CRPC.</p>
+</div>
+
+<!-- ============================= SECTION 2 ============================= -->
+<h2 id="supervision">2. SUPERVISORY &amp; SUBORDINATE RESPONSIBILITY</h2>
+
+<h3><span class="rule-tag">MR 5.1</span> Partners &amp; Supervisory Lawyers</h3>
+<p><strong>(a) Firm-level:</strong> Partners/managers <span class="must">SHALL make reasonable efforts</span> to ensure the firm has measures (policies, procedures, COI systems, supervision) ensuring all lawyers conform with Rules. Depends on firm's size and structure.</p>
+<p><strong>(b) Direct supervision:</strong> A supervising lawyer <span class="must">SHALL make reasonable efforts</span> to ensure supervised lawyer complies with Rules.</p>
+<p><strong>(c) Liability:</strong> A lawyer is responsible for another's violation if:</p>
+<ul>
+  <li>They <strong>ordered</strong> the conduct, or <strong>ratified</strong> it with knowledge of specific conduct; OR</li>
+  <li>They are a partner/manager/direct supervisor who <strong>knew of the misconduct</strong> at a time when consequences could have been avoided/mitigated and failed to take reasonable remedial action</li>
+</ul>
+<p><em>Supervisor is required to intervene to prevent avoidable consequences if supervisor knows misconduct occurred.</em></p>
+
+<h3><span class="rule-tag">MR 5.2</span> Subordinate Lawyers</h3>
+<ul>
+  <li>A lawyer is bound by the Rules and <span class="cannot">CANNOT</span> avoid discipline by claiming they acted at another's direction</li>
+  <li><strong>Narrow exception:</strong> If the supervisor made a <em>reasonable resolution</em> of an <em>arguable question</em> of professional duty, the subordinate is protected</li>
+</ul>
+
+<h3><span class="rule-tag">MR 5.3</span> Nonlawyer Assistance</h3>
+<p>Same framework as MR 5.1 applied to nonlawyers:</p>
+<ul>
+  <li>Partners/managers <span class="must">SHALL</span> ensure firm has measures giving reasonable assurance that nonlawyers' conduct is compatible with lawyers' professional obligations</li>
+  <li>Direct supervisors <span class="must">SHALL</span> make reasonable efforts to ensure nonlawyer compliance</li>
+  <li>Liability same as 5.1(c) — order/ratify or know and fail to remediate</li>
+  <li>Nonlawyers must be given <strong>appropriate instruction and supervision</strong>, especially regarding confidentiality. Must account for fact that nonlawyers lack legal training and are not subject to professional discipline</li>
+  <li>Applies to outside nonlawyers (investigators, document management companies, third-party printers/scanners, etc.)</li>
+</ul>
+
+<!-- ============================= SECTION 3 ============================= -->
+<h2 id="formation">3. FORMATION OF THE A-C RELATIONSHIP</h2>
+<p>The C-L relationship is one of <strong>agency</strong> — lawyer acts on behalf of client, for client's benefit, giving priority to client's interests.</p>
+<p>Courts assess: <strong>reasonable expectations and reliance of the CLIENT</strong> (not the lawyer).</p>
+<p>Factors to consider:</p>
+<ul>
+  <li>Did the client seek advice from the lawyer?</li>
+  <li>Was it within the lawyer's area of competence?</li>
+  <li>Did the lawyer (directly or implicitly) agree to give the requested advice?</li>
+</ul>
+
+<!-- ============================= SECTION 4 ============================= -->
+<h2 id="competence">4. COMPETENCE, DILIGENCE &amp; COMMUNICATION</h2>
+
+<h3><span class="rule-tag">MR 1.1</span> Competence</h3>
+<p>A lawyer <span class="must">SHALL</span> provide competent representation — legal knowledge, skill, thoroughness, and preparation <em>reasonably necessary</em> for the representation.</p>
+<p><strong>Requisite knowledge &amp; skill</strong> (lower bar) — factors:</p>
+<ul>
+  <li>Relative complexity and specialized nature of the work</li>
+  <li>Lawyer's general experience and training in the relevant field</li>
+  <li>Preparation and study the lawyer is able to give the matter</li>
+  <li>Whether referral or association with a competent attorney is feasible</li>
+  <li>Keeping abreast of changes in law, including <strong>benefits and risks of relevant technology</strong></li>
+</ul>
+<p><strong>How to meet requirement if lacking competence:</strong></p>
+<ul>
+  <li><em>Emergency:</em> May give advice/assistance when referral/consultation is impractical — but limit to only what is reasonably necessary</li>
+  <li><em>Association:</em> Retain/associate competent lawyer — must get informed consent; must reasonably believe the other attorney's services will contribute to competent/ethical representation</li>
+</ul>
+<p><strong>Thoroughness:</strong> Adequate inquiry into and analysis of factual and legal elements; must use methods and procedures meeting industry standard. Depends on complexity.</p>
+<p><strong>Criminal context — Ineffective Assistance of Counsel:</strong> D must show reasonable probability that but for L's unprofessional errors, the result of the proceeding would have been different.</p>
+
+<div class="ca-block">
+  <div class="ca-title" style="font-size:11px;font-weight:bold;color:#8B0000;margin-bottom:3px;"><span class="ca">CA</span> CRPC 1.1</div>
+  <p>Substantially same. Emphasizes that competence includes keeping abreast of benefits and risks of relevant technology.</p>
+</div>
+
+<h3><span class="rule-tag">MR 1.3</span> Diligence</h3>
+<p>A lawyer <span class="must">SHALL</span> act with <strong>reasonable diligence and promptness</strong> in representing a client.</p>
+<ul>
+  <li>Pursue matter despite opposition, obstruction, or personal inconvenience</li>
+  <li>Commitment and dedication to client's interests (but NOT bound to press for every advantage)</li>
+  <li>Meet all filing dates; do not procrastinate</li>
+  <li>Manage workload — controlling workload is part of diligence</li>
+  <li>Sole practitioners must have a plan for coverage</li>
+</ul>
+
+<h3><span class="rule-tag">MR 1.4</span> Communication</h3>
+<p>Lawyer <span class="must">SHALL</span>:</p>
+<ul>
+  <li><strong>(a)(1)</strong> Promptly inform client of any decision or circumstance requiring informed consent (delay OK if client might have strong reaction; notify ASAP in exigent circumstances)</li>
+  <li><strong>(a)(2)</strong> Promptly inform client of settlement offers (civil) or proffered plea bargains (criminal) — UNLESS client previously indicated it is acceptable/unacceptable OR authorized L to accept/reject</li>
+  <li><strong>(a)(3)</strong> Reasonably consult with client about means to accomplish objectives (unless prior discussion resolved it)</li>
+  <li><strong>(a)(4)</strong> Keep client reasonably informed about the status of the matter</li>
+  <li><strong>(a)(5)</strong> Promptly comply with reasonable requests for information</li>
+  <li><strong>(b)</strong> Explain matters to the extent reasonably necessary for client to make informed decisions</li>
+</ul>
+
+<!-- ============================= SECTION 5 ============================= -->
+<h2 id="scope">5. SCOPE &amp; ALLOCATION OF AUTHORITY</h2>
+
+<h3><span class="rule-tag">MR 1.2</span> Scope of Representation</h3>
+<p><strong>Client controls (objectives):</strong></p>
+<ul>
+  <li>Objectives of representation — lawyer MUST follow</li>
+  <li>Whether to settle (civil) — client decides</li>
+  <li>Criminal: plea, jury waiver, testifying — client decides after consultation</li>
+  <li>Means: lawyer consults with client; may take impliedly authorized action</li>
+</ul>
+<p><strong>May limit scope if:</strong> (1) Reasonable under the circumstances AND (2) Client gives informed consent.</p>
+<p><strong>(b)</strong> Representing a client ≠ endorsement of client's political, economic, social, or moral views or activities.</p>
+<p><strong>(d) CANNOT:</strong> Counsel or assist conduct the lawyer <em>knows</em> is criminal or fraudulent.</p>
+<p><strong>CAN:</strong> (i) discuss legal consequences of proposed conduct; (ii) help client test validity/scope/meaning of law in good faith.</p>
+<p><em>"Fraud" = conduct that is fraudulent under substantive/procedural law of applicable jurisdiction AND has purpose to deceive.</em></p>
+
+<div class="ca-block">
+  <div class="ca-title" style="font-size:11px;font-weight:bold;color:#8B0000;margin-bottom:3px;"><span class="ca">CA</span> CRPC 1.2</div>
+  <p>Substantially same. Limitation of scope requires informed <em>written</em> consent in California.</p>
+</div>
+
+<h3><span class="rule-tag">MR 2.1</span> Advisor</h3>
+<p>In representing a client, lawyer <span class="must">SHALL</span> exercise <strong>independent professional judgment</strong> and render <strong>candid advice</strong>.</p>
+<ul>
+  <li>May refer not only to law but to moral, economic, social, and political factors relevant to client's situation</li>
+  <li>Client is entitled to straightforward advice expressing lawyer's honest assessment — don't sugarcoat</li>
+  <li>If client's course of action is related to the representation and is problematic, lawyer's duty under 1.4 may require offering advice proactively</li>
+</ul>
+<div class="ca-block">
+  <div class="ca-title" style="font-size:11px;font-weight:bold;color:#8B0000;margin-bottom:3px;"><span class="ca">CA</span> Distinction</div>
+  <p>MR 2.1's reference to non-legal factors (moral, economic, social, political) not explicitly included in CRPC.</p>
+</div>
+
+<h3><span class="rule-tag">MR 1.14</span> Client with Diminished Capacity</h3>
+<p><strong>(a)</strong> Lawyer <span class="must">SHALL</span> maintain normal C-L relationship as far as reasonably possible even when client's decision-making capacity is diminished (minority, mental impairment, etc.). Client's values and preferences may still guide representation.</p>
+<p><strong>(b)</strong> If lawyer reasonably believes client: (i) has diminished capacity, (ii) is at risk of substantial physical/financial/other harm unless action is taken, AND (iii) cannot adequately act in own interest → lawyer <span class="may">MAY</span> take reasonably necessary protective action (consult with individuals/entities, seek appointment of guardian ad litem/conservator/guardian).</p>
+<p><strong>(c)</strong> Lawyer is impliedly authorized under 1.6 to reveal info about client when taking protective action — only to extent reasonably necessary to protect client's interests.</p>
+<p><em>If family member approaches lawyer on behalf of the limited individual, be alert to undue influence or fraud. Seek normal A-C relationship with the actual client.</em></p>
+<div class="ca-block">
+  <div class="ca-title" style="font-size:11px;font-weight:bold;color:#8B0000;margin-bottom:3px;"><span class="ca">CA</span> Distinction</div>
+  <p>MR 1.14 is NOT in the CRPC. No direct California equivalent.</p>
+</div>
+
+<!-- ============================= SECTION 6 ============================= -->
+<h2 id="termination">6. TERMINATION</h2>
+
+<h3><span class="rule-tag">MR 1.16</span> Declining or Terminating Representation</h3>
+
+<div class="two-col">
+  <div class="box box-must">
+    <div class="box-title">Mandatory Withdrawal — SHALL (1.16(a))</div>
+    <ul>
+      <li>Representation will result in violation of Rules or law</li>
+      <li>Lawyer's physical/mental condition materially impairs ability to represent client</li>
+      <li>Lawyer is discharged by client</li>
+      <li>Client/prospective client seeks to use or persists in using lawyer's services to commit a crime or fraud (despite lawyer's discussion per 1.2(d) and 1.4(a)(5))</li>
+    </ul>
+    <p style="margin-top:6px;font-style:italic;font-size:11px;">Obligation continues throughout course of representation.</p>
+  </div>
+  <div class="box box-may">
+    <div class="box-title">Permissive Withdrawal — MAY (1.16(b))</div>
+    <ul>
+      <li>Can be effected without material adverse effect on client's interests</li>
+      <li>Client persists in course of action L reasonably believes is criminal/fraudulent</li>
+      <li>Client used L's services to perpetrate a crime or fraud</li>
+      <li>Client insists on action L finds repugnant or fundamentally disagrees with</li>
+      <li>Client fails substantially to fulfill obligation to L AND was given reasonable warning</li>
+      <li>Unreasonable financial burden upon L, or client has made it unreasonably difficult</li>
+      <li>Other good cause (services misused, inability to work with co-counsel, etc.)</li>
+    </ul>
+  </div>
+</div>
+
+<p><strong>(c) Court proceedings:</strong> Must give notice to tribunal per applicable law. When ordered by tribunal, lawyer <span class="must">MUST</span> continue representation UNLESS good cause exists. Court approval/notice often required. Statement that "professional considerations require termination" is typically sufficient to satisfy court.</p>
+
+<h4>Upon Termination — MR 1.16(d) (MUST do all of these):</h4>
+<ul>
+  <li>Give reasonable notice to the client</li>
+  <li>Allow time for employment of other counsel (in writing)</li>
+  <li>Surrender papers and property to which client is entitled</li>
+  <li>Refund advance payment of any fee or expense not yet earned</li>
+  <li>Take ALL reasonable steps to mitigate consequences to client — even if unfairly discharged</li>
+</ul>
+<p><em>May retain certain papers as security for a fee only to the extent permitted by other law. Client has right to discharge lawyer at any time, with or without cause.</em></p>
+
+<div class="ca-block">
+  <div class="ca-title" style="font-size:11px;font-weight:bold;color:#8B0000;margin-bottom:3px;"><span class="ca">CA</span> CRPC 1.16</div>
+  <p>Mandatory withdrawal same. CA omits some permissive grounds: no "without material adverse effect" ground; no "repugnant/fundamental disagreement" ground; no "unreasonable financial burden" ground. CA Comment 4 &amp; 6: if discharged, comply with applicable law requiring notice/permission. If client makes rep unreasonably difficult, MAY withdraw but still must protect client's interests.</p>
+</div>
+
+<!-- ============================= SECTION 7 ============================= -->
+<h2 id="confidentiality">7. CONFIDENTIALITY</h2>
+
+<h3><span class="rule-tag">MR 1.6(a)</span> General Rule</h3>
+<p>Lawyer <span class="cannot">SHALL NOT</span> reveal information relating to representation of a client unless:</p>
+<ul>
+  <li>Client gives <strong>informed consent</strong></li>
+  <li>Disclosure is <strong>impliedly authorized</strong> in order to carry out representation (e.g., admitting undisputed facts, firm lawyers sharing info internally)</li>
+  <li>Disclosure is permitted by MR 1.6(b)</li>
+</ul>
+<p>Duty applies to: <em>prospective clients, current clients, and former clients.</em> Duty continues after representation ends.</p>
+<p><strong>Breadth:</strong> Covers ALL information relating to representation, whatever its source — spoken/written, personal info, info from documents/photos/observation, notes/memos created by L. Broader than A-C privilege.</p>
+<p><strong>(c)</strong> Lawyer <span class="must">SHALL</span> make reasonable efforts to prevent inadvertent or unauthorized disclosure of/access to client info. Factors: sensitivity of info, likelihood of disclosure without safeguards, cost of safeguards, difficulty of implementation, effect on ability to represent.</p>
+
+<div class="ca-block">
+  <div class="ca-title" style="font-size:11px;font-weight:bold;color:#8B0000;margin-bottom:3px;"><span class="ca">CA — CRPC 1.6 &amp; CBPC § 6068(e)</span></div>
+  <p>CA has the <strong>most strongly worded duty</strong> of confidentiality. Requires maintenance of confidence "at every peril to himself or herself." "Client secret" = any info obtained during professional relationship, or relating to representation, that client has requested be inviolate OR whose disclosure might be embarrassing or detrimental to the client. <strong>Narrower exceptions than MR</strong> — no implied authorization exception in CA. No MR 1.6(c) equivalent in CA.</p>
+</div>
+
+<h3><span class="rule-tag">MR 1.6(b)</span> Permissive Exceptions — MAY Reveal</h3>
+<table>
+  <tr><th>#</th><th>Exception</th><th>CA?</th></tr>
+  <tr><td>1</td><td>Prevent <strong>reasonably certain death or substantial bodily harm</strong> (imminent or future substantial threat)</td><td style="background:#fff8f8;color:#8B0000;font-weight:bold;">YES (limited)</td></tr>
+  <tr><td>2</td><td>Prevent client from committing <strong>future crime/fraud</strong> reasonably certain to result in substantial injury to another's financial interests AND client used L's services in furtherance</td><td style="background:#fff8f8;color:#8B0000;font-weight:bold;">NO</td></tr>
+  <tr><td>3</td><td>Prevent/mitigate/rectify substantial injury from <strong>past crime/fraud</strong> AND client used L's services in furtherance</td><td style="background:#fff8f8;color:#8B0000;font-weight:bold;">NO</td></tr>
+  <tr><td>4</td><td>Secure <strong>legal ethics advice</strong> for L's own compliance</td><td style="background:#e8ffe8;color:#005a00;">Yes (case law)</td></tr>
+  <tr><td>5</td><td>Establish <strong>claim or defense</strong> in controversy between L and client</td><td style="background:#e8ffe8;color:#005a00;">Yes (case law)</td></tr>
+  <tr><td>6</td><td>Comply with <strong>other law or court order</strong></td><td style="background:#fff8f8;color:#8B0000;font-weight:bold;">NO</td></tr>
+  <tr><td>7</td><td>Detect/resolve <strong>conflicts of interest</strong> arising from change of employment or ownership — only if revealed info would not compromise ACP or prejudice client</td><td style="background:#fff8f8;color:#8B0000;font-weight:bold;">NO</td></tr>
+</table>
+
+<div class="ca-block">
+  <div class="ca-title" style="font-size:11px;font-weight:bold;color:#8B0000;margin-bottom:3px;"><span class="ca">CA</span> CRPC 1.6(b) — ONLY EXCEPTION</div>
+  <p>A lawyer MAY reveal confidential info ONLY IF lawyer reasonably believes disclosure is necessary to prevent a <strong>criminal act</strong> likely to result in <strong>death or substantial bodily harm</strong>. BEFORE revealing, SHALL (if reasonable): make good faith effort to persuade client not to commit the act, OR pursue a course that will prevent the harm. SHALL inform client at appropriate time of ability/decision to reveal.</p>
+</div>
+
+<p><em>Note on b(1):</em> "Reasonably certain to occur" = imminent OR present and substantial threat that person will suffer harm at a later date if L fails to act. Before disclosing, try to persuade client to act to obviate need for disclosure. Disclosure should be as narrow as possible.</p>
+
+<p><strong>MR 1.8(b):</strong> Lawyer SHALL NOT use info relating to representation of client to the <strong>disadvantage of client</strong> unless client gives informed consent (or as permitted by Rules).</p>
+
+<p><strong>MR 4.4(b):</strong> Lawyer who receives documents/ESI relating to representation of client and knows/should know it was <strong>inadvertently sent SHALL promptly notify sender</strong>.</p>
+
+<!-- ============================= SECTION 8 ============================= -->
+<h2 id="acp">8. ATTORNEY-CLIENT PRIVILEGE &amp; WORK PRODUCT</h2>
+
+<h3>Attorney-Client Privilege</h3>
+<p>For a communication to be privileged there must be:</p>
+<ul>
+  <li>An attorney-client relationship (current OR potential)</li>
+  <li>Communication made <strong>in confidence</strong></li>
+  <li>Communication made for the purpose of <strong>giving or obtaining legal advice</strong> (NOT personal comfort)</li>
+  <li>NOT made for purpose of furthering an ongoing crime/fraud</li>
+</ul>
+
+<p><strong>Coverage:</strong> Protects communications between L and C (spoken or written). Does NOT apply to underlying facts. Does NOT cover physical evidence.</p>
+
+<p><strong>Privileged persons:</strong> Neither L nor C may be required to testify. L has duty to invoke on C's behalf.</p>
+
+<p><strong>Corporations:</strong> Lower-level employees are privileged IF: (1) communication at direction of superior; (2) superior requested legal advice and no other way to obtain info; (3) subject matter within scope of employee's duties; (4) not disseminated beyond those who need to know; (5) employees knew corp was seeking legal advice. <em>Agent corporations:</em> privileged if functionally equivalent to client.</p>
+
+<p><strong>Joint clients:</strong> Unless agreement made at outset, A-C privilege is waived if conflict arises and they get separate counsel.</p>
+
+<p><strong>Waiver:</strong> Client discloses to non-privileged third persons; client authorizes L to disclose; putting privilege at issue; inadvertent disclosure; failure to invoke; disclosing part of conversation; court order.</p>
+
+<h4>Crime/Fraud Exception:</h4>
+<p>Privilege does NOT apply when client sought/received help from L to <strong>plan or commit</strong> a crime or fraud. To overcome privilege, need only show client's <em>objective</em> was perpetration of crime/fraud — not that crime/fraud actually occurred. Applies even if L unaware of criminal/fraudulent purpose.</p>
+
+<h3>Work Product Doctrine</h3>
+<ul>
+  <li>Protects documents and tangible things prepared by a party or lawyer <strong>in anticipation of litigation</strong> from pretrial discovery</li>
+  <li>Especially protects L's thoughts, strategies, and mental impressions</li>
+  <li>Extends beyond L-C communications (e.g., usually protects witness statements L obtains)</li>
+  <li><strong>NOT absolute:</strong> Judge may order disclosure if opposing party shows: (1) substantial need for material AND (2) unable without due hardship to obtain substantive equivalent by other means</li>
+</ul>
+
+<table style="margin-top:8px;">
+  <tr><th></th><th>A-C Privilege</th><th>Work Product</th><th>MR 1.6 Confidentiality</th></tr>
+  <tr><td><strong>Scope</strong></td><td>L-C communications for legal advice</td><td>Litigation prep materials</td><td>ALL info relating to representation, any source</td></tr>
+  <tr><td><strong>Context</strong></td><td>Judicial proceedings</td><td>Evidence production/discovery</td><td>All other situations</td></tr>
+  <tr><td><strong>Absolute?</strong></td><td>Yes (except crime/fraud)</td><td>No (overcome w/ substantial need)</td><td>With exceptions per 1.6(b)</td></tr>
+</table>
+
+<!-- ============================= SECTION 9 ============================= -->
+<h2 id="current-conflicts">9. CURRENT CLIENT CONFLICTS — MR 1.7</h2>
+
+<h3>Step-by-Step Analysis</h3>
+<div class="step"><div class="step-num">1</div><div><strong>Identify client(s)</strong> — current, former, or prospective?</div></div>
+<div class="step"><div class="step-num">2</div><div><strong>Does a concurrent conflict exist?</strong>
+  <ul style="margin-top:4px;">
+    <li><strong>Direct adversity (1.7(a)(1)):</strong> Representation of one client will be <em>directly adverse</em> to another client (suing your client, cross-examining your client, negotiating against your client)</li>
+    <li><strong>Material limitation (1.7(a)(2)):</strong> Significant risk that representation of one or more clients will be <em>materially limited</em> by responsibilities to another client, former client, third person, or L's own personal interest (will L "pull punches"?)</li>
+  </ul>
+</div></div>
+<div class="step"><div class="step-num">3</div><div><strong>Is the conflict consentable?</strong> L MAY represent despite conflict IF ALL four conditions met:
+  <ul style="margin-top:4px;">
+    <li>L <strong>reasonably believes</strong> L can provide competent and diligent representation to each affected client</li>
+    <li>Representation is <strong>not prohibited by law</strong></li>
+    <li>Representation does NOT involve <strong>asserting a claim by one client against another client in the same proceeding</strong></li>
+    <li>Each affected client gives <strong>informed consent, confirmed in writing (ICCW)</strong></li>
+  </ul>
+</div></div>
+<div class="step"><div class="step-num">4</div><div><strong>Non-consentable conflicts:</strong> Cannot cure even with consent:
+  <ul style="margin-top:4px;">
+    <li>Cannot provide competent/diligent representation (1.7(b)(1))</li>
+    <li>Prohibited by law (1.7(b)(2))</li>
+    <li>Representing both sides of the "v." in the same litigation (1.7(b)(3))</li>
+  </ul>
+</div></div>
+
+<p><em>Key principle (Comment 6):</em> Absent consent, L may NOT act as advocate in one matter against a person L represents in some other matter, even when matters are wholly unrelated. A client against whom representation is directly adverse is likely to feel betrayed.</p>
+
+<p><em>Consentability assessment — ask:</em> Would there be an adverse effect on the relationship with either client? Would there be an adverse effect on the representation? May L disclose what is necessary to obtain consent?</p>
+
+<p><strong>Informed Consent (MR 1.0(e) &amp; (f)):</strong> Agreement after L communicated adequate info about material risks and reasonably available alternatives. Must include: disclosure of facts/circumstances, explanation of material advantages/disadvantages, discussion of options/alternatives. Must be "confirmed in writing" (writing by person, or writing L promptly transmits confirming oral consent).</p>
+
+<p><strong>Advanced waivers (Comment 22):</strong> Validity depends on: how well client understands possible future conflicts; how specific/thorough the disclosure; client's experience with type of legal services; whether client received independent legal advice; whether arising conflict is one that can be solved by consent.</p>
+
+<h4>Representing Co-Parties in Civil Litigation — advise co-parties about:</h4>
+<ul>
+  <li>Possibility of conflicting testimony</li>
+  <li>Conflicting settlement positions</li>
+  <li>A-C privilege implications</li>
+  <li>Confidentiality between co-parties</li>
+  <li>Withdrawal in event of conflict</li>
+</ul>
+
+<div class="ca-block">
+  <div class="ca-title" style="font-size:11px;font-weight:bold;color:#8B0000;margin-bottom:3px;"><span class="ca">CA</span> CR 1.7</div>
+  <p>Substantially same as MR 1.7. CA requires informed <em>written</em> consent (IWC) rather than ICCW. Consentability framework same.</p>
+</div>
+
+<!-- ============================= SECTION 10 ============================= -->
+<h2 id="former-conflicts">10. FORMER CLIENT CONFLICTS — MR 1.9</h2>
+
+<h3>MR 1.9(a) — Direct Former Representation</h3>
+<p>L who <strong>personally formerly represented</strong> a client in a matter <span class="cannot">SHALL NOT</span> represent another person in the <strong>same or substantially related matter</strong> in which the new client's interests are <strong>materially adverse</strong> to the former client's, UNLESS former client gives ICCW.</p>
+
+<h3>MR 1.9(b) — Prior Firm Representation</h3>
+<p>L <span class="cannot">SHALL NOT</span> knowingly represent a person in the same/substantially related matter in which L's prior firm represented a client whose interests are materially adverse to that person — AND about whom <strong>L actually acquired confidential info that is material</strong> — UNLESS former client gives ICCW.</p>
+
+<h4>Key Distinction: 1.9(a) vs. 1.9(b)</h4>
+<table>
+  <tr><th></th><th>1.9(a)</th><th>1.9(b)</th></tr>
+  <tr><td>Who represented former client?</td><td>The lawyer personally</td><td>The lawyer's prior firm (not necessarily the lawyer personally)</td></tr>
+  <tr><td>Confidential info requirement</td><td>Ask: would L <em>normally have learned</em> CI that could be used adversely? (hypothetical)</td><td>Ask: did L <em>actually acquire</em> material CI? (actual)</td></tr>
+</table>
+
+<p><strong>"Substantially related" (Comment 3):</strong> Do the matters involve the same transaction or legal dispute? Is there a substantial risk that L representing client in a matter like the one handled for former client would normally have learned CI that could be used to materially advance the new client's position?</p>
+
+<ul>
+  <li>Focus is on what confidences would <em>normally have been learned</em> — NOT what was actually learned</li>
+  <li>Former client moving to DQ is NOT required to reveal relevant confidences — may give general description and judge assesses likelihood</li>
+  <li>Info disclosed to the public or adverse parties ordinarily will not be disqualifying</li>
+  <li>Info may be rendered obsolete by passage of time</li>
+  <li>General knowledge of client's policies/practices will not preclude representation; specific facts relevant to the matter in question ordinarily will</li>
+</ul>
+
+<p><strong>MR 1.9(c) — ongoing duty re: former clients:</strong> Lawyer <span class="cannot">SHALL NOT</span>: (1) use info relating to former representation to disadvantage of former client, except as Rules allow or when info has become <em>generally known</em>; or (2) reveal info relating to former representation except as Rules allow.</p>
+
+<h4>Hot Potato Doctrine:</h4>
+<p>Courts consistently refuse to allow firms to drop current clients solely for purpose of taking on new matters adverse to now-former client — cannot manufacture a "former" client to avoid conflict.</p>
+
+<div class="ca-block">
+  <div class="ca-title" style="font-size:11px;font-weight:bold;color:#8B0000;margin-bottom:3px;"><span class="ca">CA</span> CRPC 1.9</div>
+  <p>Substantially same. Informed written consent (IWC) rather than ICCW.</p>
+</div>
+
+<!-- ============================= SECTION 11 ============================= -->
+<h2 id="imputation">11. IMPUTATION &amp; SCREENING — MR 1.10</h2>
+
+<h3>MR 1.10(a) — Imputation of Conflicts</h3>
+<p>While lawyers are associated in a firm, <strong>NONE</strong> may knowingly represent a client where any one of them practicing alone would be prohibited under MR 1.7 or 1.9, UNLESS:</p>
+<ul>
+  <li><strong>Exception 1:</strong> The prohibition is based on a <strong>personal interest</strong> of the disqualified lawyer AND does not present significant risk of materially limiting representation by remaining lawyers</li>
+  <li><strong>Exception 2 (Screening — for laterals from prior firm):</strong> Prohibition based on 1.9 AND arises from disqualified L's association with a <em>prior firm</em>, AND:
+    <ul>
+      <li>Disqualified L is <strong>timely screened</strong> from participation in matter and apportioned no part of fee (if L substantially participated)</li>
+      <li><strong>Written notice</strong> is promptly given to former client (must include: description of screening procedures; statement of firm's and screened L's compliance; statement that review may be available before tribunal; agreement to respond to written inquiries; certification of compliance by screened L and partner)</li>
+    </ul>
+  </li>
+</ul>
+<p><em>Screening ONLY available when conflict came from a prior firm. If L did the work at the current firm, there's no screening escape hatch.</em></p>
+
+<h3>MR 1.10(b) — When Lawyer Leaves Firm</h3>
+<p>After a lawyer leaves a firm, the firm is NOT prohibited from representing persons with interests materially adverse to clients the departing lawyer represented, UNLESS:</p>
+<ul>
+  <li>The matter is <strong>same or substantially related</strong> to what former L represented the client in, AND</li>
+  <li>Any lawyer remaining in the firm has <strong>confidential info that is material</strong> to the matter</li>
+</ul>
+<p><em>Both conditions must be true to block the firm. Disqualification MAY be waived.</em></p>
+
+<p><strong>MR 1.0(k) — "Screened":</strong> Isolation of lawyer from any participation in the matter through timely imposition of procedures reasonably adequate to protect info the isolated lawyer is obligated to protect.</p>
+
+<!-- ============================= SECTION 12 ============================= -->
+<h2 id="prospective">12. PROSPECTIVE CLIENTS — MR 1.18</h2>
+<p>A person who consults with a lawyer about the <strong>possibility of forming</strong> a C-L relationship is a prospective client.</p>
+<ul>
+  <li>Even when no C-L relationship ensues, lawyer who has learned info from prospective client <span class="cannot">SHALL NOT</span> use or reveal that info (same as former client protections under 1.9)</li>
+  <li>Lawyer who received info <span class="cannot">SHALL NOT</span> represent a client with interests materially adverse to those of the prospective client in the same/substantially related matter IF the info received could be <strong>significantly harmful</strong> to prospective client</li>
+  <li>Conflict imputed to the firm, UNLESS screening available</li>
+</ul>
+<p><strong>Screening exception (1.18(d)):</strong> Rep permissible if:</p>
+<ul>
+  <li>Both affected client AND prospective client give ICCW; OR</li>
+  <li>L took reasonable measures to avoid excess disqualifying info AND L is timely screened with no fee AND written notice to prospective client</li>
+</ul>
+<p><em>Comment 2:</em> If a person seeks a lawyer for the purpose of <em>disqualifying</em> that lawyer, that person is NOT a prospective client — no consultation occurred for the purpose of forming a C-L relationship.</p>
+
+<!-- ============================= SECTION 13 ============================= -->
+<h2 id="org">13. ORGANIZATIONAL CLIENTS — MR 1.13</h2>
+
+<h3>MR 1.13(a)</h3>
+<p>Lawyer employed or retained by an organization represents the <strong>organization</strong>, acting through its duly authorized constituents.</p>
+
+<h3>MR 1.13(b) — Duty to Act</h3>
+<p>If lawyer for org <strong>knows</strong> that an officer, employee, or other person associated with org:</p>
+<ul>
+  <li>Is engaged in action, intends to act, or refuses to act in a matter related to representation that is a <strong>violation of legal obligation to the org</strong> OR a violation of law that could be imputed to the org, AND</li>
+  <li>Is <strong>likely to result in substantial injury</strong> to the org</li>
+</ul>
+<p>Then lawyer <span class="must">SHALL</span> proceed as reasonably necessary in best interest of org — SHALL refer the issue to <strong>higher authority</strong> within the org (unless L reasonably believes this is not necessary in best interest of org).</p>
+
+<h3>MR 1.13(c) — Going Outside (Discretionary)</h3>
+<p>Lawyer <span class="may">MAY</span> reveal information relating to representation <em>whether or not MR 1.6 permits disclosure</em> — but ONLY IF:</p>
+<ul>
+  <li>Despite lawyer's efforts, the <strong>highest authority</strong> insists on illegal course or fails to address violation in timely/adequate manner, AND</li>
+  <li>Lawyer <strong>reasonably believes</strong> the violation is reasonably certain to result in <strong>substantial injury</strong> to the org</li>
+</ul>
+<p>Disclosure only to the extent L reasonably believes necessary to prevent substantial injury. Does NOT apply to info relating to L's own investigation or defense against an alleged violation.</p>
+
+<p><strong>MR 1.13(e) — If lawyer is leaving</strong> (due to (b) or (c)): Must tell highest authority or ensure they are aware of lawyer's discharge/withdrawal.</p>
+
+<p><strong>MR 1.13(f):</strong> If lawyer knows or reasonably should know constituent's interests are adverse to organization's, <span class="must">SHALL</span> explain nature of representation (L represents company, not the individual).</p>
+
+<p><strong>MR 1.13(g):</strong> Lawyer representing organization MAY also represent any of its constituents, subject to Rule 1.7. Consent must be given by appropriate official OTHER than the member being individually represented.</p>
+
+<!-- ============================= SECTION 14 ============================= -->
+<h2 id="gov">14. GOVERNMENT LAWYERS &amp; JUDGES — MR 1.11</h2>
+
+<h3>Former Government Lawyers — MR 1.11(a)–(c)</h3>
+<p>Subject to MR 1.9(c) PLUS additional restrictions.</p>
+
+<h4>Two Bases for Disqualification of Former Gov Lawyer:</h4>
+<div class="two-col">
+  <div class="box">
+    <div class="box-title" style="color:#1a1a2e;">Basis 1 — MR 1.11(a): Substantial Participation</div>
+    <p>SHALL NOT represent a client in connection with a matter in which L <strong>personally and substantially participated</strong> as a government employee, UNLESS government agency gives ICCW.</p>
+    <ul>
+      <li>"Matter" = claim, contract, controversy, charge, application, proceeding (NOT all substantive issues worked on generally)</li>
+      <li>No adversity requirement between new client's interests and gov's interests</li>
+      <li>Conflict IS imputed but DQ'd L can be screened per 1.11(b)</li>
+      <li><strong>Consentable</strong> — gov can give ICCW</li>
+    </ul>
+  </div>
+  <div class="box">
+    <div class="box-title" style="color:#1a1a2e;">Basis 2 — MR 1.11(c): Confidential Gov Info</div>
+    <p>If L knows (actual knowledge) confidential government info obtained through gov position, <strong>CANNOT represent private client whose interests are materially adverse to the person about whom the lawyer has the confidential info</strong> (if it could be used to materially disadvantage that person).</p>
+    <ul>
+      <li>"Confidential gov info" = info acquired while in gov position; gov is prohibited from disclosing OR entitled to assert privilege; AND info is not otherwise publicly available</li>
+      <li>Conflict IS imputed but DQ'd L can be screened</li>
+      <li><strong>NON-consentable</strong> — cannot cure by consent</li>
+    </ul>
+  </div>
+</div>
+
+<h3>Present Government Lawyers — MR 1.11(d)</h3>
+<p>Apply MR 1.9(a) (former client duties) and MR 1.7 (current client duties — client = government).</p>
+<p>Current gov L <span class="cannot">SHALL NOT</span>:</p>
+<ul>
+  <li>Participate in a matter L personally and substantially participated in while in private practice — UNLESS gov agency gives ICCW</li>
+  <li>Negotiate for private employment with any person who is a party or whose interests are involved in a matter in which L is personally and substantially participating (<em>Exception: law clerks</em>)</li>
+</ul>
+<p><em>Comment 2: Imputation is NOT applicable for present gov lawyer conflicts.</em></p>
+
+<h3>Judicial Rules — Canons</h3>
+<p>Canons promote: independence, integrity, impartiality.</p>
+
+<p><strong>Canon 2.4 — External Influences:</strong> Judge shall NOT be swayed by fear of criticism or public; shall NOT permit family/social/political/financial/other interests to influence judgment; shall NOT convey that any person is in position to influence the judge.</p>
+
+<p><strong>Canon 2.9 — Ex Parte Communications:</strong> Shall NOT initiate, permit, or consider ex parte communications UNLESS all parties/lawyers are present. May obtain written advice of disinterested expert on law with notice; may consult another judge.</p>
+
+<p><strong>Canon 2.11 — Disqualification:</strong> Shall disqualify if lack of impartiality, including:</p>
+<ul>
+  <li>Personal bias/prejudice</li>
+  <li>Existing or desired romantic relationships</li>
+  <li>Judge knows their spouse/partner/third-degree relative is: a party (or trustee/officer/director), acting lawyer, person with more than de minimis interest, or person likely to be material witness</li>
+  <li>NOT required to DQ if merely acquainted with a lawyer</li>
+</ul>
+<p>Judge should disclose on record any information that parties/lawyers might reasonably consider relevant to possible motion for DQ — even if judge believes no basis for DQ exists. Waiver is possible.</p>
+
+<!-- ============================= SECTION 15 ============================= -->
+<h2 id="personal">15. CONFLICTS — PERSONAL &amp; BUSINESS INTERESTS (MR 1.8)</h2>
+<p><em>Apply MR 1.7(a)(2) first: significant risk that representation will be materially limited by L's personal interest? If so, apply 1.7(b) to determine if curable.</em></p>
+
+<h3>MR 1.8(a) — Business Transactions with Client</h3>
+<p>SHALL NOT enter into business transaction with client or knowingly acquire ownership/possessory/security/pecuniary interest adverse to client UNLESS ALL three conditions met:</p>
+<ul>
+  <li>Terms are <strong>fair and reasonable</strong> to client AND <strong>fully disclosed in writing</strong> in manner reasonably understood by client</li>
+  <li>Client is advised in writing of the <strong>desirability of seeking independent legal counsel</strong> AND given opportunity to do so</li>
+  <li>Client gives <strong>ICCW (signed by client)</strong> to essential terms and L's role in the transaction</li>
+</ul>
+<p>Does NOT apply to: ordinary fee arrangements; standard commercial transactions where L has no unfair advantage. <strong>Imputed to associated lawyers.</strong> Violation = discipline AND possible contract rescission.</p>
+
+<h3>MR 1.8(b) — Using Client Info Against Client</h3>
+<p>SHALL NOT use info relating to representation of client to disadvantage of client unless client gives informed consent, except as permitted or required by Rules.</p>
+
+<h3>MR 1.8(c) — Gifts from Client</h3>
+<ul>
+  <li>SHALL NOT solicit substantial gifts or bequests from client</li>
+  <li>SHALL NOT prepare any instrument giving gift to L or L's relatives</li>
+  <li><em>Exception:</em> Does not apply if L or recipient is related to client (spouse, child, grandparent, grandchild, close familial relationship)</li>
+</ul>
+
+<h3>MR 1.8(f) — Third-Party Compensation</h3>
+<p>SHALL NOT accept compensation for representing client from someone other than client UNLESS:</p>
+<ul>
+  <li>Client gives informed consent</li>
+  <li>No interference with L's independence of professional judgment or C-L relationship</li>
+  <li>Info relating to representation protected per Rule 1.6</li>
+</ul>
+
+<h3>MR 1.8(h) — Limiting Malpractice Liability</h3>
+<p>SHALL NOT: (1) make agreement to limit malpractice liability UNLESS client is independently represented; OR (2) settle claim/potential claim for malpractice with unrepresented/former client UNLESS they are advised in writing to seek outside counsel AND given reasonable opportunity to do so.</p>
+
+<h3>MR 1.8(i) — Financial Assistance to Client</h3>
+<p>SHALL NOT provide financial assistance to client in connection with pending/contemplated litigation. MAY advance court costs and litigation costs (repayment contingent on outcome). MAY pay court costs for indigent client.</p>
+
+<h3>MR 1.8(j) — Sexual Relationships</h3>
+<ul>
+  <li>Sexual relationships that predate C-L relationship are NOT prohibited</li>
+  <li>Sexual relationships with former clients are NOT prohibited</li>
+  <li>Conflict is <strong>PERSONAL</strong> — NOT imputed to associated lawyers</li>
+</ul>
+
+<!-- ============================= SECTION 16 ============================= -->
+<h2 id="fees">16. FEES &amp; TRUST ACCOUNTS</h2>
+
+<h3><span class="rule-tag">MR 1.5</span> Fees</h3>
+<p>Lawyer <span class="cannot">SHALL NOT</span> make agreement for, charge, or collect an <strong>unreasonable fee or unreasonable amount for expenses</strong>.</p>
+<p><strong>Reasonableness factors:</strong> (1) Time and labor, novelty and difficulty, skill required; (2) Likelihood that acceptance will preclude other employment; (3) Fee customarily charged for similar work in locality; (4) Amount involved and results obtained; (5) Time limitations; (6) Nature and length of the professional relationship; (7) Experience, reputation, ability of L; (8) Whether fee is fixed or contingent.</p>
+<p>Scope, fees, and expenses shall be communicated to client (preferably in writing) before or within a reasonable time after commencing representation.</p>
+
+<p><strong>Contingency fees:</strong> MUST be in writing signed by client, stating: method of determining fee (% if settled/tried/appealed), litigation expenses to be deducted, whether expenses deducted before or after contingent fee calculated. At conclusion: written statement of final dispersal. <strong>NO contingency fees in criminal cases or domestic relations cases.</strong></p>
+
+<p><strong>MR 1.5(e) — Fee Splitting (Lawyers Not in Same Firm):</strong> MAY split if: (1) division proportional to services or joint responsibility for representation; (2) client agrees to arrangement including each lawyer's share in ICCW; (3) total fee is reasonable. MUST do conflicts check. <em>Note: CA does NOT require division proportional to services or assumption of joint responsibility.</em></p>
+
+<div class="ca-block">
+  <div class="ca-title" style="font-size:11px;font-weight:bold;color:#8B0000;margin-bottom:3px;"><span class="ca">CA</span> CRPC 1.5</div>
+  <p>"Unconscionable or illegal fees" (not just unreasonable). If foreseeable fees/expenses &gt; $1,000, MUST have written fee agreement signed by L and C. Exceptions: emergency services; same representation as previously provided; client knowingly states in writing they do not want written agreement; client is corporation. Failure to comply renders K voidable at C's choice; L entitled to "reasonable fee."</p>
+</div>
+
+<h3>MR 5.4 — Fee Splitting with Non-Lawyers</h3>
+<p>CANNOT share legal fees with non-lawyers (very narrow exceptions). Purpose: protect L's independent judgment from being affected by non-lawyer financial interests.</p>
+
+<h3><span class="rule-tag">MR 1.15</span> Trust Accounts &amp; Safekeeping of Property</h3>
+<ul>
+  <li><strong>No commingling</strong> — keep L's property and client's property separate at ALL times</li>
+  <li>Multiple clients' funds may be in same trust account</li>
+  <li>Complete records SHALL be preserved for <strong>5 years</strong> after termination of representation</li>
+  <li><strong>Retainer</strong> (earned at outset/purchasing L's availability): goes in L's operating account</li>
+  <li><strong>Standard advance fee</strong> (hourly): goes in client trust account (not yet earned)</li>
+  <li>L may deposit own funds into client trust account ONLY for purpose of paying bank charges, and only in amount necessary</li>
+  <li>Advance fees belong to client and must remain in trust account until earned; once earned, MUST be promptly moved out</li>
+  <li>Upon receipt of settlement check: MUST notify client and promptly pay all funds due; must provide accounting if asked</li>
+  <li><strong>Disputed funds:</strong> Keep separate until dispute resolved; promptly distribute all portions NOT in dispute</li>
+</ul>
+<p><strong>IOLTA:</strong> If money will NOT generate interest covering cost of account and paying interest to client → MUST deposit into IOLTA account (goes to State Bar, typically funds legal services for the poor).</p>
+
+<!-- ============================= SECTION 17 ============================= -->
+<h2 id="courts">17. DUTIES TO COURTS</h2>
+
+<h3><span class="rule-tag">MR 3.1</span> Investigation Before Filing — No Frivolous Claims</h3>
+<p>SHALL NOT bring/defend a proceeding or assert an issue unless there is a basis in law and fact that is not frivolous. A good faith argument for extension, modification, or reversal of existing law is OK. <em>Need not be fully substantiated before suit is filed.</em></p>
+<p><em>Criminal defense exception:</em> L may defend a criminal matter by requiring the government to establish every element of its case.</p>
+<div class="ca-block">
+  <div class="ca-title" style="font-size:11px;font-weight:bold;color:#8B0000;margin-bottom:3px;"><span class="ca">CA</span> Distinction</div>
+  <p>Requires "probable cause" and prohibits filing "for purpose of harassing or maliciously injuring."</p>
+</div>
+
+<h3><span class="rule-tag">MR 3.3</span> Candor to Tribunal</h3>
+<p>Lawyer <span class="cannot">SHALL NOT</span> knowingly:</p>
+<ul>
+  <li><strong>(a)(1)</strong> Make a false statement of fact or law to tribunal, OR fail to correct a MATERIAL false statement previously made</li>
+  <li><strong>(a)(2)</strong> Fail to disclose <strong>directly adverse legal authority in a controlling jurisdiction</strong> known to L that is not disclosed by opposing counsel (must affirmatively disclose)</li>
+  <li><strong>(a)(3)</strong> Offer evidence L knows to be false; if L, client, or a witness offers material evidence and L knows/learns it is false → <span class="must">MUST</span> take reasonable remedial measures (including disclosure to tribunal)</li>
+</ul>
+<p><strong>Remedial order of operations:</strong> (1) Advise client of duty of candor and seek client's cooperation; (2) Seek to withdraw (not required); (3) Disclose to tribunal.</p>
+<p>Duties continue to the <strong>conclusion of the proceeding</strong>. Apply even if compliance requires disclosure otherwise protected by 1.6. If withdrawal is not permitted by court, must disclose.</p>
+<p>In <strong>ex parte proceedings</strong> → L shall inform tribunal of all material facts known to L that will enable court to make an informed decision.</p>
+<p>L MAY refuse to offer evidence (other than criminal D's own testimony in a criminal matter) that L reasonably believes is false.</p>
+<p>If L KNOWS criminal D will testify falsely: cannot allow him to testify; must try to dissuade; must withdraw if cannot dissuade.</p>
+
+<div class="ca-block">
+  <div class="ca-title" style="font-size:11px;font-weight:bold;color:#8B0000;margin-bottom:3px;"><span class="ca">CA</span> Distinction — Critical</div>
+  <p>Disclosure to the tribunal is NEVER an allowable "remedial measure" under California rules. CA requires narrative testimony instead when crim-D insists on testifying, if L made reasonable effort to dissuade and sought court's permission to withdraw.</p>
+</div>
+
+<h3><span class="rule-tag">MR 3.4</span> Fairness to Opposing Party &amp; Counsel</h3>
+<p>SHALL NOT:</p>
+<ul>
+  <li>Unlawfully obstruct another party's access to evidence; unlawfully destroy, alter, or conceal any document with potential evidentiary value; counsel another person to do so</li>
+  <li>Falsify evidence</li>
+  <li>Counsel or assist a witness to testify falsely</li>
+  <li>Offer an inducement to a witness that is prohibited by law (CAN pay expert hourly; CANNOT pay contingent on outcome)</li>
+  <li>Knowingly disobey an obligation to the tribunal</li>
+  <li>Make frivolous discovery requests or fail to make reasonably diligent efforts to comply</li>
+  <li><strong>(f)</strong> Request a person OTHER than a client to refrain from voluntarily giving relevant information to a party UNLESS the person is a relative/employee/agent of a client AND L reasonably believes their interests will not be adversely affected</li>
+</ul>
+<p><em>Can coach a witness; CANNOT assist them to testify falsely. Can tell witness to say "I don't recall" but CANNOT say "the less you recall, the better." Cannot discourage adverse witness from testifying.</em></p>
+
+<!-- ============================= SECTION 18 ============================= -->
+<h2 id="third">18. DUTIES TO ADVERSARIES &amp; THIRD PERSONS</h2>
+
+<h3><span class="rule-tag">MR 4.1</span> Truthfulness in Statements to Others</h3>
+<p>In course of representing a client, SHALL NOT knowingly:</p>
+<ul>
+  <li>Make a <strong>false statement of material fact or law</strong> to a third party</li>
+  <li>Fail to disclose a material fact to a third party when disclosure is necessary to avoid assisting a criminal or fraudulent act by client — UNLESS 1.6 bars disclosure</li>
+</ul>
+<p>Generally <strong>no affirmative duty</strong> to inform opposing party of relevant facts. Misrepresentation can occur through: incorporation of others' false statements L knows to be false; partially true but misleading statements/omissions. Estimates of price, value, and negotiating positions are generally NOT statements of material fact (puffery).</p>
+
+<h3><span class="rule-tag">MR 4.2</span> No Contact with Represented Persons</h3>
+<p>In representing a client, SHALL NOT communicate about subject of representation to a person L knows to be represented by another lawyer in the matter — UNLESS: consent of other lawyer; OR authorized by law/court order.</p>
+<p>Prohibition applies even if the represented person initiates contact. L must immediately terminate if L learns person is represented. Applies to lawyers, not clients — two clients may talk without their lawyers' permission.</p>
+<p><strong>Organizations:</strong> Prohibition applies to constituent of org who: supervises/directs/regularly consults with org's L concerning matter; has authority to obligate org; or whose acts/omissions may be imputed to org for civil/criminal liability. Consent NOT required for former constituents.</p>
+
+<h3><span class="rule-tag">MR 4.3</span> Dealing with Unrepresented Persons</h3>
+<ul>
+  <li>SHALL NOT state or imply L is disinterested</li>
+  <li>Where L knows/should know unrepresented person misunderstands L's role → SHALL make reasonable efforts to correct</li>
+  <li>SHALL NOT give legal advice to unrepresented person if L knows/should know their interests are or have possibility of being in conflict with client's interests</li>
+  <li>May: inform person of terms of agreement, explain L's own view of meaning of documents, prepare documents requiring person's signature — so long as L has explained L represents adverse party</li>
+</ul>
+
+<h3><span class="rule-tag">MR 4.4</span> Respect for Rights of Third Parties</h3>
+<ul>
+  <li>SHALL NOT use means that have <strong>no substantial purpose other than to embarrass, delay, or burden</strong> a third person</li>
+  <li>SHALL NOT use means of obtaining evidence that violate legal rights of third persons</li>
+  <li>Lawyer who receives inadvertently sent documents/ESI SHALL promptly notify sender (L technically could still use the documents; should refrain from examining more than necessary to determine if privileged)</li>
+</ul>
+
+<!-- ============================= SECTION 19 ============================= -->
+<h2 id="advertising">19. ADVERTISING &amp; SOLICITATION</h2>
+
+<h3><span class="rule-tag">MR 7.1</span> Truthful Communications About Services</h3>
+<p>SHALL NOT make false or misleading communications about L or L's services. Misleading = contains material misrepresentations; omits facts necessary to make statement not misleading. Includes: implying specific results that can't be substantiated; unverifiable comparisons to other lawyers; implying improper influence over government.</p>
+
+<h3><span class="rule-tag">MR 7.2</span> Advertising</h3>
+<p>May communicate info about services through any media. All communications must include firm name and office address of at least one responsible lawyer. SHALL NOT compensate anyone for recommending L's services (except: reasonable cost of ads, legal service plan charges, paying for law practice, nonexclusive mutual referral agreement with another L or profession if client informed, nominal gifts as appreciation).</p>
+
+<h3><span class="rule-tag">MR 7.3</span> Solicitation</h3>
+<p><strong>Solicitation = communication initiated by L directed to specific person L knows/should know needs legal services, offering to provide legal services for that matter.</strong></p>
+<p>SHALL NOT solicit by <strong>live person-to-person contact</strong> when significant motive is profit — UNLESS contact is with:</p>
+<ul>
+  <li>Another lawyer</li>
+  <li>Person with family, close personal, or prior professional/business relationship with L or firm</li>
+  <li>Person who routinely uses the type of legal services offered (for business purposes)</li>
+</ul>
+<p>NOT person-to-person contact = written communications, texts, chat rooms (less restricted). SHALL NOT solicit if: target has made known desire not to be solicited; involves coercion, duress, or harassment (especially elderly/vulnerable).</p>
+
+<!-- ============================= SECTION 20 ============================= -->
+<h2 id="probono">20. PRO BONO &amp; APPOINTMENTS</h2>
+
+<h3><span class="rule-tag">MR 6.1</span> Voluntary Pro Bono Service</h3>
+<p>Every lawyer has professional responsibility to provide services to those unable to pay. Goal: <strong>50+ hours</strong> per year without fee or expectation of fee, substantially directed toward persons of limited means or charitable/civic organizations. Additionally: reduced fee services; activities to improve law, legal system, or profession.</p>
+
+<h3><span class="rule-tag">MR 6.2</span> Accepting Appointments</h3>
+<p>Lawyer SHALL NOT avoid appointments by a tribunal EXCEPT for good cause:</p>
+<ul>
+  <li>Representation will likely result in violation of Rules or law</li>
+  <li>Would result in unreasonable financial burden</li>
+  <li>Client or cause is so repugnant to L as to likely impair C-L relationship or L's ability to represent</li>
+</ul>
+
+<hr style="margin:30px 0; border-top: 1px solid #999;">
+<p style="text-align:center; font-size:11px; color:#666; font-style:italic;">ABA Model Rules are primary. California distinctions marked in red throughout. Always check specific jurisdiction's rules.</p>
+
+</body>
+</html>
